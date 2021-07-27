@@ -5,7 +5,9 @@ const INITIAL_STATE: ICartState = {
     items: []
 }
 
-const cart: Reducer<ICartState> = () => {
+const cart: Reducer<ICartState> = (state, action) => {
+    console.log('State: ', state)
+    console.log('Action: ', action)
     return INITIAL_STATE
 }
 
